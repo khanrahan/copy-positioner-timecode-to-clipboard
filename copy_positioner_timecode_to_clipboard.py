@@ -2,13 +2,13 @@
 Script Name: Copy Positioner Timecode to Clipboard
 Written By: Kieran Hanrahan
 
-Script Version: 1.0.0
 Flame Version: 2022
+Script Version: 2.0.0
 
 URL: http://www.github.com/khanrahan/copy-positioner-timecode-to-clipboard
 
 Creation Date: 02.25.24
-Update Date: 02.25.24
+Update Date: 04.17.24
 
 Description:
 
@@ -31,15 +31,13 @@ To Install:
     /opt/Autodesk/user/<user name>/python
 """
 
-from __future__ import print_function
-
 import flame
 from PySide2 import QtWidgets
 
 TITLE = 'Copy Positioner Timecode to Clipboard'
-VERSION_INFO = (1, 0, 0)
+VERSION_INFO = (2, 0, 0)
 VERSION = '.'.join([str(num) for num in VERSION_INFO])
-TITLE_VERSION = '{} v{}'.format(TITLE, VERSION)
+TITLE_VERSION = f'{TITLE} v{VERSION}'
 MESSAGE_PREFIX = '[PYTHON]'
 
 
@@ -57,7 +55,7 @@ def copy_to_clipboard(text):
 def process_selection(selection):
     """Loop through all the timelines while assembling the results."""
     message(TITLE_VERSION)
-    message('Script called from {}'.format(__file__))
+    message(f'Script called from {__file__}')
 
     results = []
 
