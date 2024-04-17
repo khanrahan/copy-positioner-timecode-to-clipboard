@@ -2,8 +2,8 @@
 Script Name: Copy Positioner Timecode to Clipboard
 Written By: Kieran Hanrahan
 
-Flame Version: 2022
 Script Version: 2.0.0
+Flame Version: 2025
 
 URL: http://www.github.com/khanrahan/copy-positioner-timecode-to-clipboard
 
@@ -32,7 +32,7 @@ To Install:
 """
 
 import flame
-from PySide2 import QtWidgets
+from PySide6 import QtWidgets
 
 TITLE = 'Copy Positioner Timecode to Clipboard'
 VERSION_INFO = (2, 0, 0)
@@ -80,5 +80,5 @@ def get_media_panel_custom_ui_actions():
              'actions': [{'name': 'Positioner Timecode to Clipboard',
                           'isVisible': scope_timeline,
                           'execute': process_selection,
-                          'minimumVersion': '2022'}]
+                          'minimumVersion': '2025'}]
             }]
