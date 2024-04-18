@@ -5,7 +5,7 @@ Plugin for [Autodesk Flame software](http://www.autodesk.com/products/flame).
 Copy positioner timecode of selected timelines to the clipboard.
 
 ## Installation
-**Tested & working on 2024.1.2**
+**Download v2.0.0 release for Flame 2025.  For Flame 2024 and below, download v1.0.0 release.**
 
 To make available to all users on the workstation, copy `copy_positioner_timecode_to_clipboard.py` to `/opt/Autodesk/shared/python`
 
